@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Jordão | 8-Bit Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="scanline"></div>
+
+  <div class="container">
+
+    <header class="hud-header pixel-box">
+      <div class="player-info">
+        <span class="label">PLAYER:</span>
+        <span class="value yellow">VICTOR JORDÃO</span>
+      </div>
+      <div class="player-stats">
+        <span class="label">CLASS:</span>
+        <span class="value green">FRONT-END & TECH SUPPORT</span>
+      </div>
+      <div class="hp-bar-container">
+        <span>HP</span>
+        <div class="hp-bar"><div class="hp-fill"></div></div>
+      </div>
+    </header>
+
+    <nav class="pixel-box nav-menu">
+      <a href="#about" class="nav-btn">ABOUT</a>
+      <a href="#projects" class="nav-btn">QUESTS (PROJECTS)</a>
+      <a href="#experience" class="nav-btn">EXPERIENCE</a>
+      <a href="#contact" class="nav-btn">CONTACT</a>
+    </nav>
+
+    <section class="hero pixel-box">
+      <h1 class="glitch-text">PRESS START!</h1>
+      <p class="subtitle">Front-End Developer & IT Assistant based in Brasília, Brazil.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="pixel-btn primary">VIEW PROJECTS</a>
+        <a href="#contact" class="pixel-btn">GET IN TOUCH</a>
+      </div>
+    </section>
+
+    <section id="about" class="pixel-box">
+      <h2 class="section-title">&gt; ABOUT THE PLAYER</h2>
+      <p class="bio-text">
+        Currently working as an IT Assistant and pursuing a degree in Systems Analysis and Development, I have hands-on experience in technical support, web development with JavaScript/React, and automation. Focused on building functional interfaces, dynamic forms, and optimizing operational workflows. Currently transitioning into Data Analytics by building skills in Excel, SQL, and Python.
+      </p>
+
+      <h3 class="subsection-title">SKILLS INVENTORY:</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><span class="icon">📜</span> HTML5 & CSS3</div>
+        <div class="skill-card"><span class="icon">⚡</span> JavaScript (ES6+)</div>
+        <div class="skill-card"><span class="icon">⚛️</span> React.js & Next.js</div>
+        <div class="skill-card"><span class="icon">🛠️</span> Git & GitHub</div>
+        <div class="skill-card"><span class="icon">📊</span> SQL & Python</div>
+        <div class="skill-card"><span class="icon">🖥️</span> IT Support & Networking</div>
+      </div>
+    </section>
+
+    <section id="projects" class="pixel-box">
+      <h2 class="section-title">&gt; COMPLETED QUESTS (PROJECTS)</h2>
+      <div class="projects-grid">
+
+        <article class="project-card pixel-box-inner">
+          <div class="project-tag">FRONT-END / OPERATIONAL</div>
+          <h3>Student Management Dashboard</h3>
+          <p>
+            An internal dashboard used by administrators for gym student management, featuring student registration, active/inactive status tracking, and monthly metrics on enrollments and cancellations.
+          </p>
+          <div class="tech-tags">
+            <span>CSS3</span>
+            <span>REACT.JS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://student-management-painel.vercel.app/" target="_blank" class="pixel-btn sm">DEMO</a>
+            <a href="https://github.com/Victorjota-web/student-management-painel" target="_blank" class="pixel-btn sm">CODE</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="experience" class="pixel-box">
+      <h2 class="section-title">&gt; LEVEL HISTORY (KEY EXPERIENCES)</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="job-header">
+            <span class="job-title">IT Assistant @ SAMA</span>
+            <span class="job-date">Jul 2026 - Present</span>
+          </div>
+          <p>
+            Technical support for users, internal systems, hardware, and infrastructure. Testing, developing, and refining internal web interfaces (forms and login pages), while pursuing a career transition focused on operational data analysis using Excel, SQL, and Python.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="job-header">
+            <span class="job-title">Front-end Intern @ Allp Fit</span>
+            <span class="job-date">Apr 2025 - Dec 2025</span>
+          </div>
+          <p>
+            Assisted in developing responsive web interfaces using JavaScript and React.js based on Figma prototypes. Consumed RESTful APIs and managed version control via Git/GitHub.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="job-header">
+            <span class="job-title">Notary Clerk @ 5º Ofício Registry</span>
+            <span class="job-date">Aug 2024 - Feb 2025</span>
+          </div>
+          <p>
+            Drafting and reviewing public documents, organizing records, and managing operational workflows with a strong focus on accuracy and documentation standards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="pixel-box text-center">
+      <h2 class="section-title">&gt; INSERT COIN (CONTACT)</h2>
+      <p>Looking for a developer focused on problem-solving with a solid background in tech support and front-end?</p>
+      
+      <div class="contact-buttons">
+        <a href="mailto:vitinjordao@gmail.com" class="pixel-btn primary">EMAIL</a>
+        <a href="https://linkedin.com/in/victor-jordão-b53a68244" target="_blank" class="pixel-btn">LINKEDIN</a>
+        <a href="https://wa.me/61996234815" target="_blank" class="pixel-btn">WHATSAPP</a>
+      </div>
+      <p class="contact-sub">Brasília, Brazil | +55 (61) 99623-4815</p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 VICTOR JORDÃO - ALL RIGHTS RESERVED - GAME OVER?</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
